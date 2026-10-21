@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ba1edwf2s6fjy"]
+
+[ext_resource type="PackedScene" uid="uid://bosp4ojs3ocev" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://biobe8iy1b1t7" path="res://Scenes/ball.tscn" id="2_qxrlw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oiiii"]
+size = Vector2(25.51173, 1046.0239)
+
+[node name="Game" type="Node2D" unique_id=1377163805]
+
+[node name="PlayerRacquet" parent="." unique_id=347591316 instance=ExtResource("1_ebmjs")]
+position = Vector2(278, 893)
+
+[node name="Ball" parent="." unique_id=103791471 instance=ExtResource("2_qxrlw")]
+position = Vector2(281, 753)
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=565147841]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=1166683086]
+position = Vector2(-13, 500)
+shape = SubResource("RectangleShape2D_oiiii")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=177279144]
+position = Vector2(553, 501)
+shape = SubResource("RectangleShape2D_oiiii")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls" unique_id=903070602]
+position = Vector2(315.00003, -12)
+rotation = 1.5684751
+shape = SubResource("RectangleShape2D_oiiii")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls" unique_id=464409118]
+position = Vector2(319, 974)
+rotation = 1.5684751
+shape = SubResource("RectangleShape2D_oiiii")

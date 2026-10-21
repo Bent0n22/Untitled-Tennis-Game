@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://biobe8iy1b1t7"]
+
+[ext_resource type="Script" uid="uid://m7n8rvnkgjtc" path="res://Scripts/ball.gd" id="1_d60mj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ewmql"]
+radius = 7.20324
+
+[node name="Ball" type="CharacterBody2D" unique_id=103791471]
+script = ExtResource("1_d60mj")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=854956628]
+position = Vector2(-0.0007963339, -0.011619568)
+scale = Vector2(0.22843204, 0.22843207)
+color = Color(0.4745098, 1, 0.21176471, 1)
+polygon = PackedVector2Array(0, -32, 8.317316, -30.895054, 16.046114, -27.711178, 22.705517, -22.558619, 27.785135, -15.9234915, 30.896095, -8.29189, 32.038403, -0.0040864944, 30.944706, 8.235102, 27.736526, 16.012508, 22.608301, 22.696217, 16.046114, 27.702927, 8.268709, 30.91111, -0.019091606, 32.004807, -8.306892, 30.911106, -16.059996, 27.72723, -22.71942, 22.598997, -27.701805, 15.988204, -30.934298, 8.235102, -32.027985, -0.004088402, -30.909971, -8.291893, -27.701813, -16.045029, -22.62219, -22.631527, -16.011368, -27.686869, -8.233951, -30.919361)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=453846436]
+shape = SubResource("CircleShape2D_ewmql")
